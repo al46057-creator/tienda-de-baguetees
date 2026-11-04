@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Baguettes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Realiza tu Pedido de Baguettes</h1>
+
+        <div class="contenido">
+
+            <form id="pedidoForm">
+
+                <label>Especialidad:</label>
+                <select id="especialidad">
+                    <option value="80">Clásica $80.00 MXN</option>
+                    <option value="95">Jamón $95.00 MXN</option>
+                    <option value="100">Pollo $100.00 MXN</option>
+                    <option value="110">Italiana $110.00 MXN</option>
+                </select>
+
+                <p>Tipo de Pan:</p>
+
+                <label><input type="radio" name="pan" value="0" checked> Clásico</label>
+                <label><input type="radio" name="pan" value="20"> Con Ajonjolí (+$20)</label>
+                <label><input type="radio" name="pan" value="20"> Integral (+$20)</label>
+                <label><input type="radio" name="pan" value="50"> Brioche (+$50)</label>
+
+                <p>Ingredientes adicionales ($5.00 MXN c/u):</p>
+
+                <div class="ingredientes">
+                    <label><input type="checkbox" name="ingrediente" value="5"> Queso</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Lechuga</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Jitomate</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Cebolla</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Jalapeño</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Huevo</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Pepino</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Champiñones</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Tocino extra</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Doble queso</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Piña</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Guacamole</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Salsa BBQ</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Mayonesa</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Mostaza</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Ketchup</label>
+                    <label><input type="checkbox" name="ingrediente" value="5"> Pepperoni</label>
+                </div>
+
+                <p>Cantidad de Baguettes:</p>
+                <input type="number" id="cantidad" min="1" value="1">
+
+                <p>
+                    <input type="checkbox" id="domicilio">
+                    ¿Es a domicilio? (+$30 MXN)
+                </p>
+
+                <p id="mensaje"></p>
+
+                <h3>Total: <span id="total">$0.00</span></h3>
+
+                <button type="submit">Calcular Total</button>
+
+            </form>
+
+            <div class="galeria">
+                <img src="https://images.unsplash.com/photo-1600454309261-3dc9b7597637?auto=format&fit=crop&w=500&q=80">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80">
+                <img src="https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=500&q=80">
+                <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80">
+            </div>
+
+</body>
+</html>

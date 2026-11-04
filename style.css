@@ -1,0 +1,105 @@
+
+body {
+    font-family: Arial;
+    background-color: #ffe5cc;
+}
+
+.contenedor {
+    background-color: #ff994d;
+    padding: 20px;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #293746;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+form {
+    width: 65%;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.ingredientes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ingredientes label {
+    width: 30%;
+    background-color: #eeeeee;
+    padding: 5px;
+}
+
+.galeria {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e65c20;
+}
+
+#total {
+    color: #293746;
+}
+
+#mensaje {
+    color: red;
+}
+
+@media (max-width: 700px) {
+    .contenido {
+        flex-direction: column;
+    }
+
+    form, .galeria {
+        width: 100%;
+    }
+
+    .galeria {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .galeria img {
+        width: 45%;
+    }
+}
